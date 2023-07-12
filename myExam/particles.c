@@ -17,7 +17,7 @@ float* generate_particles(int N){
     return particles;
 }
 
-void main(int argc, char **argv)
+int main(int argc, char **argv)
 {  
     //chech number of arguments
     if (argc!=2){
@@ -44,5 +44,5 @@ void main(int argc, char **argv)
 
     fclose(bf);
     free(particles);
-
+    return 0;
 }
